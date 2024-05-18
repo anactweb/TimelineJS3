@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Timeline</title>
+    <link rel="stylesheet" href="website/static/css/site.css">
+</head>
+<body>
+    <div id="timeline-embed"></div>
+    <script src="compiled/js/timeline.js"></script>
+    <script>
+        var options = {
+            start_at_slide: 0,
+            // autres options de configuration
+        };
+        window.timeline = new TL.Timeline('timeline-embed', 'https://docs.google.com/spreadsheets/d/193XcVmgyxIp6uNtHF_AZwrwEuciFqPfbwyfq1GlZxa0/edit#gid=372501184', options);
+    </script>
+</body>
+</html>
